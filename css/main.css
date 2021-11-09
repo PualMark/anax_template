@@ -733,11 +733,11 @@
 	}
 
 	.service-01 ul{
-		font-size: 2vh;
+		font-size: 2.5vh;
 	}
 
 	.service-02 p{
-		font-size: 2vh;
+		font-size: 2.5vh;
 	}
 
 /* Portfolio */
@@ -764,12 +764,12 @@
 	}
 
 	.portfolio-content p{
-		font-size: 2vh;
 		grid-column: 2/3;
 		grid-row: 2/4;
 	}
 	.portfolio-content-text{
 		margin-top: 20px;
+		font-size: 2.5vh;
 	}
 	.portfolio-02{
 		position: relative;
