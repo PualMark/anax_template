@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>Anaximando Olmos</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<script src="js/main.js"></script>
+	<div class="intro">
+		<img src="img/logo/logo.png">
+		<figure class="intro-img-line-container">
+			<div class="intro-img-line"></div>
+			<div class="intro-img-line"></div>
+			<div class="intro-img-line"></div>
+			<div class="intro-img-line"></div>
+		</figure>
+	</div>
+	<header>
+		<div class="header-bg"></div>
+		<div class="logo-container">
+			<img src="img/logo/logo.png" class="logo">
+		</div>
+		<input type=checkbox id="show-nav" onclick="showNavbar()">
+		<div class="toggle-container">
+			<label class="toggle" for="show-nav">
+				<div class="toggle-line" id="toggle-line1"></div>
+				<div class="toggle-line" id="toggle-line2"></div>
+			</label>
+		</div>
+	</header>
+	<nav class="navbar-container" id="navbar">
+		<div class="navbar-blur" id="nav-bg"></div>
+		<ul>
+			<li id="home-nav"><a href="#home">Inicio</a></li>
+			<li id="services-nav"><a href="#services">Servicios</a></li>
+			<li id="portfolio-nav"><a href="#portfolio">Portafolio</a></li>
+			<li id="contact-nav"><a href="#contact">Contacto</a></li>
+		</ul>
+	</nav>
+	<div class="home-container" id="home">
+		<div class="home-content">
+			<h2>Anax<br>Olmos</h2>
+			<p>Somos un grupo de profesionistas que hacemos nuestro trabajo con mucho compromiso. Para nosotros no existen los proyectos pequeños, cada uno de los que nos toca desarrollar, tiene su grandeza en la <b>originalidad</b> y <b>funcionalidad</b> con la que son resueltos.<br><br>El Cliente, para nosotros, es lo más importante, es por eso, que lo hacemos participe del proyecto, para que juntos encontremos la mejor solución.</p>
+			<img src="img/home.png">
+		</div>
+	</div>
+	<div class="services-container" id="services">
+		<div class="services-bg"></div>
+		<div class="services-content">
+			<h2>Servicios</h2>
+			<div class="service-01">
+				<ul>
+					<li>Diseño de Proyectos Arquitectónicos.</li>
+					<li>Desarrollo de Proyectos Ejecutivos.</li>
+					<li>Desarrollo de Ingenierías Constructivas.</li>
+					<li>Construcción en general.</li>
+					<li>Remodelaciones.</li>
+					<li>Renders Fotorelaistas.</li>
+					<li>Recorridos Virtuales.</li>
+					<li>Asesorías Profesionales.</li>
+				</ul>
+			</div>
+			<div class="service-02">
+				<p>Desarrollamos Proyectos y Renders Arquitectónicos, de tipo: residencial, comercial, industrial, urbano, educacional y gubernamental.</p>
+			</div>
+			<div class="services-slider">
+				<div class="slider-bg">
+					<a href="#portfolio"><p>Ver más</p><i class="fas fa-eye"></i></a>
+				</div>
+	            <div class="s-slide"><img src="img/slider/slide_01.jpg"></div>
+	            <div class="s-slide"><img src="img/slider/slide_02.jpg"></div>
+	            <div class="s-slide"><img src="img/slider/slide_03.jpg"></div>
+	            <div class="s-slide"><img src="img/slider/slide_04.jpg"></div>
+	            <div class="s-slide"><img src="img/slider/slide_05.jpg"></div>
+	            <div class="s-slide"><img src="img/slider/slide_06.jpg"></div>
+	        </div>
+	        <script src="js/main.js"></script>
+		</div>
+	</div>
+	<div class="portfolio-container" id="portfolio">
+		<div class="portfolio-content">
+			<h2>Portafolio</h2>
+			<p>Contamos con 16 años de experiencia en arquitectura residencial, comercial e industrial, y esperamos que pronto sea uno más de nuestros clientes satisfechos.
+			<div id="project-preview">
+			</div>
+			<div class="portfolio-02">
+				<h2 class="projects-container-title">Proyectos</h2>
+				<div class="projects-container" id="project-card">
+					<script src="js/portfolio.js"></script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contact-container" id="contact">
+		<div class="contact-content">
+			<h2>Contáctanos</h2>
+			<p>+(81) 1177 1535<br>info@anaxolmos.com.mx</p>
+		</div>
+	</div>
+</body>
+</html>
