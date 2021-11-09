@@ -17,6 +17,28 @@ var contactId = document.getElementById('contact-nav')
 		homeId.style.backgroundColor = 'rgb(255, 255, 255, 0.1)'
 	}
 
+//Smooth Scroll
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 400, function(){
+
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
 
 // Toggle Button Function to Show Navigation Bar Mobile
 function showNavbar() {
