@@ -170,7 +170,7 @@
 			}
 		}
 
-		.home-container,.services-container,.portfolio-container,.contact-container{
+		.home-container, .services-container{
 			animation: fade0 1.5s;
 			animation-delay: 2s;
 		}
@@ -183,7 +183,7 @@
 			animation-delay: 2s;
 		}
 
-		@keyframes fade10{
+		@keyframes fade0{
 			from{
 				opacity: 0;
 				padding-top: 50vh;
@@ -329,7 +329,6 @@
 		}
 
 	/* Navigation Bar Display Animations */
-
 		@keyframes nav-display{
 			from{
 				top: -100vh;
@@ -769,7 +768,9 @@
 		grid-column: 2/3;
 		grid-row: 2/4;
 	}
-
+	.portfolio-content-text{
+		margin-top: 20px;
+	}
 	.portfolio-02{
 		position: relative;
 		margin-right: 20px;
