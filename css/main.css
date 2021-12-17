@@ -170,38 +170,12 @@
 			}
 		}
 
-		.home-container, .services-container{
-			animation: fade0 1.5s;
-			animation-delay: 2s;
-		}
-		.portfolio-container{
-			animation: fade1 1.5s;
-			animation-delay: 2s;
-		}
-		.contact-container{
-			animation: fade2 1.5s;
+		.home-container, .services-container, .portfolio-container, .contact-container{
+			animation: intro-fade-in 1.5s;
 			animation-delay: 2s;
 		}
 
-		@keyframes fade0{
-			from{
-				opacity: 0;
-				padding-top: 50vh;
-			}to{
-				opacity: 1;
-				padding-top: 23vh;
-			}
-		}
-		@keyframes fade1{
-			from{
-				opacity: 0;
-				padding-top: 50vh;
-			}to{
-				opacity: 1;
-				padding-top: 17vh;
-			}
-		}
-		@keyframes fade2{
+		@keyframes intro-fade-in{
 			from{
 				opacity: 0;
 				padding-top: 50vh;
@@ -651,9 +625,12 @@
 /* Home */
 	.home-container{
 		width: 93%;
-		height:77vh;
+		height: 100vh;
 		margin-left: 7%;
-		padding-top: 23vh;
+		padding-top: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 	.home-container h2{
 		margin-left: 20px;
@@ -681,10 +658,14 @@
 /* Services */
 	.services-container{
 		width: 90%;
-    	height: 77vh;
-    	padding: 23vh 0 0;
-    	margin-left: 7%;
+		height: 100vh;
+		margin-left: 7%;
+    	padding: 0 0;
 		color: rgb(0, 0, 0, 0.8);
+		padding-top: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	.services-bg{
@@ -734,9 +715,12 @@
 /* Portfolio */
 	.portfolio-container{
 		width: 93%;
-		height: 83vh;
-    	padding-top: 17vh;
+		height: 100vh;
+    	padding-top: 0;
 		margin-left: 7%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	.portfolio-content{
