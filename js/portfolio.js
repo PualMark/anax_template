@@ -312,6 +312,7 @@ function findObjectByKey(array, key, value) {
 
 
 function selectProject(){
+	var previewProject = document.getElementById('project-preview');
 	var previewTitle = document.getElementById('pre-title');
 	var previewText = document.getElementById('pre-text');
 	var imgSrc = document.getElementById('main-preview').src;
@@ -323,5 +324,9 @@ function selectProject(){
 	previewTitle.innerHTML = uniqueProject.title;
 	previewText.innerHTML = uniqueProject.text;
 
+	previewProject.style.animationName = 'project-change'
+	previewProject.addEventListener('animationend', function(){
+		previewProject.style.animationName = '';
+	});
 }
 

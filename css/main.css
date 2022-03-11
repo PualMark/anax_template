@@ -760,17 +760,19 @@
 		flex-direction: column;
 		justify-content: center;
 		align-content: center;
-	}
 
-	.active{
-		animation: project-change .3s;
+		animation-duration: 300ms;
+		animation-iteration-count: 1;
+		animation-direction: normal;
 	}
 
 	@keyframes project-change{
 		from{
 			opacity: 0;
+			transform: scale(0.9);
 		}to{
 			opacity: 1;
+			transform: scale(1.0);
 		}
 	}
 
