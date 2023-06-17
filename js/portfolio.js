@@ -289,11 +289,44 @@ const projectData = [
 document.getElementById('project-card').innerHTML = `
 ${projectData.map(function(project){
 	return `
-	<div class='proj'>
-		<p class='project-title'>${project.title}</p>
-		<img class='project-img' src="${project.image}">
-		<p class='project-text'>${project.text}</p>
+	<div class='proj' onclick="selectProject()">
+		<img class='project-img' src="${project.image}" onclick="change(this.src)">
 	</div>
 	`
 }).join('')}
 `
+
+const change = src => {
+    document.getElementById('main-preview').src = src;
+}
+
+function findObjectByKey(array, key, value) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i][key] === value) {
+            return array[i];
+        }
+    }
+    return null;
+}
+
+
+
+function selectProject(){
+	var previewProject = document.getElementById('project-preview');
+	var previewTitle = document.getElementById('pre-title');
+	var previewText = document.getElementById('pre-text');
+	var imgSrc = document.getElementById('main-preview').src;
+	var imgId = imgSrc.slice(-7);
+	var uniqueProject = projectData.find(obj => {
+		return obj.image.slice(-7) === imgId
+	});
+
+	previewTitle.innerHTML = uniqueProject.title;
+	previewText.innerHTML = uniqueProject.text;
+
+	previewProject.style.animationName = 'project-change'
+	previewProject.addEventListener('animationend', function(){
+		previewProject.style.animationName = '';
+	});
+}
+
